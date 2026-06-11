@@ -15,7 +15,7 @@ The empirical core of the model focuses on historical death register subsets spa
 
 ## 📑 Foundational Base Paper
 This framework builds directly upon the following foundational literature:
-* **Fourie, J. and Jayes, J. (2021).** *Health Inequality and the 1918 Influenza in South Africa*. **World Development**.
+* [**Fourie, J. and Jayes, J. (2021).** *Health Inequality and the 1918 Influenza in South Africa*. **World Development**.]( https://www.sciencedirect.com/science/article/abs/pii/S0305750X2100019X?via%3Dihub)
 
 Fourie and Jayes transcribed thousands of historical death certificates and established the presence of a **doctor's signature** on the certificate as a reliable proxy for active healthcare access during the pandemic. Their empirical findings demonstrated that non-white populations faced drastically lower doctor signature rates, signaling a significant structural disadvantage that our mathematical modeling aims to evaluate numerically.
 
@@ -34,9 +34,9 @@ Where:
 * $\mu$: Clinical mortality rate
 
 ## 📁 Repository Contents
-- [model_running.R](./model_running.R): This script implements a deterministic SIRD epidemiological model using the deSolve package to simulate and compare cumulative mortality trajectories across different population groups under historical inequality versus hypothetical equality scenarios.
+- [`model_running.R`](./model_running.R): This script implements a deterministic SIRD epidemiological model using the deSolve package to simulate and compare cumulative mortality trajectories across different population groups under historical inequality versus hypothetical equality scenarios.
 
-- [conditional.R](./conditional.R): This script processes historical death register data to compute the conditional probabilities of a death certificate being signed by a doctor given an individual's demographic classification, establishing a proxy for healthcare access.
+- [`conditional.R`](./conditional.R): This script processes historical death register data to compute the conditional probabilities of a death certificate being signed by a doctor given an individual's demographic classification, establishing a proxy for healthcare access.
 
 
 
